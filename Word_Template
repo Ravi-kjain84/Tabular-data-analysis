@@ -1,0 +1,9 @@
+Top Performing Items
+{%tr for title in salesTblRows %}
+1.	{{ title.item }}
+S.No.	Item Name	Cost Per Unit	Units Sold	Revenue
+{%tr for item in salesTblRows %}
+1.		{{ item.name }}	{{ item.cPu }}	{{ item.nUnits }}	{{item.revenue}}
+{%tr endfor %}
+
+ 
